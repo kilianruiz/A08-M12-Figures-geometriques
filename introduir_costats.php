@@ -11,7 +11,7 @@ $figura = $_SESSION['figura'] ?? '';
 function mostrarInputs($figura) {
     switch ($figura) {
         case 'cuadrado':
-            echo '<label for="lado1">Lado:</label>';
+            echo '<label for="lado1">Lados :</label>';
             echo '<input type="number" name="lado1" id="lado1" class="form-control" value="' . ($_SESSION['lado1'] ?? '') . '" required>';
             break;
         case 'triangulo':
@@ -41,12 +41,13 @@ function mostrarInputs($figura) {
 </head>
 <body>
     <div class="container mt-4">
-        <h2>Introduir Costats de la Figura: <?php echo ucfirst($figura); ?></h2>
+        <h2>Introducir los lados de las Figuras: <?php echo ucfirst($figura); ?></h2>
         <form action="resultats.php" method="post">
             <div class="form-group">
                 <?php mostrarInputs($figura); ?>
             </div>
             <button type="submit" class="btn btn-primary">Calcular</button>
+            <a href="index.php" class="btn btn-secondary">Elegir otra figura</a>
         </form>
     </div>
 </body>

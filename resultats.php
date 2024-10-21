@@ -48,17 +48,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <div class="container mt-4">
-        <h2>Resultats per a la figura: <?php echo ucfirst($figura); ?></h2>
+        <h2>Resultados de la Figura: <?php echo ucfirst($figura); ?></h2>
         <ul>
-            <li><strong>Tipus de Figura:</strong> <?php echo ucfirst($figura); ?></li>
+            <li><strong>Tipo de Figura:</strong> <?php echo ucfirst($figura); ?></li>
             <li><strong>Lado 1:</strong> <?php echo $lado1; ?></li>
             <?php if ($lado2): ?>
                 <li><strong>Lado 2:</strong> <?php echo $lado2; ?></li>
             <?php endif; ?>
-            <li><strong>Àrea:</strong> <?php echo round($area, 2); ?></li>
-            <li><strong>Perímetre:</strong> <?php echo round($perimetre, 2); ?></li>
+            <li><strong>Área:</strong> <?php echo round($area, 2); ?></li>
+            <li><strong>Perímetro:</strong> <?php echo round($perimetre, 2); ?></li>
         </ul>
-        <a href="index.php" class="btn btn-secondary">Tornar</a>
+        <a href="index.php" class="btn btn-secondary">Elegir otra Figura</a>
+        <a href="introduir_costats.php" class="btn btn-secondary">Cambiar las medidas</a>
     </div>
 </body>
 </html>
