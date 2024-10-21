@@ -98,3 +98,9 @@ input[type="radio"]:checked + .image-container img {
     box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+.image-container img {
+    max-height: 100px;
+    object-fit: contain;
+}
