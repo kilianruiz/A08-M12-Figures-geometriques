@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php if ($lado2): ?>
                 <li><strong>Lado 2:</strong> <?php echo $lado2; ?></li>
             <?php endif; ?>
+
             <li><strong>Área:</strong> <?php echo round($area, 2); ?></li>
             <li><strong>Perímetro:</strong> <?php echo round($perimetre, 2); ?></li>
         </ul>

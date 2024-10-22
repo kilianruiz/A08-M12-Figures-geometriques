@@ -38,7 +38,7 @@
                         <h5 class="card-title">Rectángulo</h5>
                         <input type="radio" value="rectangulo" name="figura" id="rectangulo" required>
                         <div class="image-container mt-2">
-                            <img src="./img/rectangulo.png" alt="Rectángulo" class="img-fluid">
+                            <img src="./img/rectangulo.jfif" alt="Rectángulo" class="img-fluid">
                         </div>
                     </div>
                 </div>
