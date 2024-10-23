@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li><strong>Área:</strong> <?php echo round($area, 2); ?></li>
             <li><strong>Perímetro:</strong> <?php echo round($perimetre, 2); ?></li>
         </ul>
-        <a href="index.php" class="btn btn-secondary">Elegir otra Figura</a>
+        <a href="proCerrarSesion.php" class="btn btn-secondary">Elegir otra Figura</a>
         <a href="introduir_costats.php" class="btn btn-secondary">Cambiar las medidas</a>
     </div>
 </body>
