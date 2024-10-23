@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lado1 = $_SESSION['lado1'];
     $lado2 = $_SESSION['lado2'] ?? null;
 
-    // Càlculs d'àrea i perímetre
     $area = 0;
     $perimetre = 0;
 

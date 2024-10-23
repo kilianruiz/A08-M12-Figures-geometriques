@@ -53,15 +53,19 @@ function mostrarInputs($figura) {
     <script src="./JavaScript/validaciones.js"></script>
 </head> 
 <body> 
-    <div class="container mt-4">
-        <h2>Introducir los lados de las Figuras: <?php echo ucfirst($figura); ?></h2>
-        <form action="resultats.php" method="post">
-            <div class="form-group">
-                <?php mostrarInputs($figura); ?>
-            </div>
-            <button type="submit" class="btn btn-primary">Calcular</button>
-            <a href="index.php" class="btn btn-secondary">Elegir otra figura</a>
-        </form>
+    <div class="container">
+        <div class="form-container mt-4">
+            <h2>Introducir los lados de las Figuras: <?php echo ucfirst($figura); ?></h2>
+            <form action="resultats.php" method="post">
+                <div class="form-group">
+                    <?php mostrarInputs($figura); ?>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                    <a href="index.php" class="btn btn-secondary">Elegir otra figura</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
