@@ -15,6 +15,7 @@ class Rectangulo extends FiguraGeometrica{
     function getlado2(){
         return $this->lado2;
     }
+
     function setlado2($lado2){
         $this->lado2=$lado2;
     }
